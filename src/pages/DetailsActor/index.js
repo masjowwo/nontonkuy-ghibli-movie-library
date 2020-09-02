@@ -16,7 +16,7 @@ class DetailsActor extends Component {
 
 
     const breadcrumbList = [
-      {pageTitle: "Home", pageHref: ""},
+      {pageTitle: "Actors", pageHref: "/actors"},
       {pageTitle: "Actor Details", pageHref: ""}
     ] 
 
