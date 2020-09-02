@@ -13,9 +13,7 @@ function DetailsInformationActor(props) {
   }
 
   useEffect(() => {
-    if (page.detailMovie === undefined){
       props.fetchPage( `/films/${getFilmId()}`, 'detailMovie')
-    }
   })
   
   if (data === undefined || page.detailMovie === undefined) return null;
