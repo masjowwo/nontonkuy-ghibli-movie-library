@@ -1,0 +1,18 @@
+.details-information {
+
+  img {
+    height: 340px;
+    object-fit: cover;
+    object-position: center;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  .details-information {
+
+    .col-lg-7 {
+      margin-top: 30px;
+    }
+  }
+}
