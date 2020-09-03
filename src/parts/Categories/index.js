@@ -24,10 +24,10 @@ export default function Categories({ data, title }) {
                           <span style={{lineHeight: 0, fontSize: 18}}>★</span>  {movie.rt_score}
                         </div>
                         <figure className="img-wrapper">
-                          <img className="img-cover" src={`/assets/images/posters/film-${index+1}.jpg`} alt=""/>
+                          <img className="img-cover" src={`/assets/images/posters/${movie.id}.jpg`} alt=""/>
                         </figure>
                         <div className="meta-wrapper">
-                          <Button className="stretched-link d-block text-gray-900" href={`/movies/${index+1}/${movie.id}`} type="link">
+                          <Button className="stretched-link d-block text-gray-900" href={`/movies/${movie.id}`} type="link">
                             <h5 className="h4 movie-title">{movie.title}</h5>
                           </Button>
                         </div>

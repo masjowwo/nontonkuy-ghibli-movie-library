@@ -1,7 +1,7 @@
 import React from 'react'
 import './index.scss'
 
-export default function DetailsInformation({data, posterId}) {
+export default function DetailsInformation({data}) {
 
   if (data === undefined) return null 
 
@@ -11,7 +11,7 @@ export default function DetailsInformation({data, posterId}) {
         <div className="col-lg-7 mx-auto">
           <div className="row">
             <div className="col-lg-5 col-8">
-              <img src={`/assets/images/posters/film-${posterId}.jpg`} className="img-fluid width-100" alt=""/>
+              <img src={`/assets/images/posters/${data.id}.jpg`} className="img-fluid width-100" alt=""/>
             </div>
             <div className="col-lg-7 font-weight-light">
               <p><span className="text-gray-500">Title:</span>  {data.title}</p>

@@ -13,9 +13,7 @@ class DetailMovie extends Component {
   render() { 
 
     const {page} = this.props
-    const posterId = this.props.match.params.posterId
-
-
+    
     const breadcrumbList = [
       {pageTitle: "Home", pageHref: ""},
       {pageTitle: "Movie Details", pageHref: ""}
@@ -31,7 +29,7 @@ class DetailMovie extends Component {
           title={page.detailMovie.title}
           subTitle={`by ${page.detailMovie.director}`}
         />
-        <DetailsInformation data={page.detailMovie} posterId={posterId}/>
+        <DetailsInformation data={page.detailMovie}/>
       </>
     )
   }
